@@ -1,6 +1,27 @@
 .profile-card {
-  background-color: white;
+  background-color: #333;
   border-radius: 16px;
   border: 1px solid #aaa;
+  color: #fff;
   padding: 24px;
+}
+
+.loading-cell-1 {
+  height: 32px;
+  width: 200px;
+  background-size: 400%;
+  background: linear-gradient(90deg, rgba(200, 200, 200, 0.7) 0%, rgba(172, 172, 172, 0.05) 50%, rgba(200, 200, 200, 0.7) 100%);
+  animation: loading-gradient-1 1.5s linear infinite forwards;
+}
+
+@keyframes loading-gradient-1 {
+  0% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }

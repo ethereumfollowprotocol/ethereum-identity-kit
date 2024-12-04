@@ -1,0 +1,1 @@
+export const EFP_API_URL = "https://api.ethfollow.xyz/api/v1";

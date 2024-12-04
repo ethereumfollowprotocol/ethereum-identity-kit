@@ -13,17 +13,22 @@
   },
   "repository": "git+https://github.com/ethereumfollowprotocol/ethereum-identity-kit.git",
   "keywords": [
+    "ethereum identity kit",
     "ethereum",
     "identity",
     "kit"
   ],
-  "author": "Ethereum Follow Protocol",
+  "author": {
+    "name": "Ethereum Follow Protocol",
+    "url": "https://ethfollow.xyz"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ethereumfollowprotocol/ethereum-identity-kit/issues"
   },
   "homepage": "https://github.com/ethereumfollowprotocol/ethereum-identity-kit#readme",
   "devDependencies": {
+    "@adraffy/ens-normalize": "^1.11.0",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
@@ -56,6 +61,7 @@
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
+    "@tanstack/react-query": "^5.62.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
