@@ -1,6 +1,6 @@
 import React from 'react'
 import './LoadingCell.css'
-import { LoadingCellProps } from "./LoadingCard.types"
+import { LoadingCellProps } from "./LoadingCell.types"
 
 export const DEFAULT_LOADING_GRADIENT =
   'linear-gradient(90deg, rgba(200, 200, 200, 0.7) 0%, rgba(172, 172, 172, 0.05) 50%, rgba(200, 200, 200, 0.7) 100%)'
@@ -11,10 +11,11 @@ const LoadingCell: React.FC<LoadingCellProps> = ({
   gradient = DEFAULT_LOADING_GRADIENT,
   height = '100%',
   width = '100%',
+  radius = '5px',
   ...props
 }) => {
   return (
-    <div {...props} style={{ height, width, ...props.style }}>
+    <div style={{ height, width, borderRadius: radius, overflow: 'hidden', ...props.style }} {...props}>
       <div
         style={{ backgroundImage: gradient }}
         className="loading-cell"

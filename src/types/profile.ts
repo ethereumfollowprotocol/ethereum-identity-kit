@@ -6,14 +6,11 @@ export type ENSProfile = {
   display?: string
   header?: string
   contenthash?: string
-  records?: {
-    avatar: string
-    [key: string]: string
-  }
-  chains?: { [key: string]: string }
+  records?: Record<string, string>
+  chains?: Record<string, string>
   fresh?: number
   resolver?: string
-  errors?: { [key: string]: string }
+  errors?: Record<string, string>
 }
 
 export type ENSMetadataProfile = {

@@ -1,0 +1,25 @@
+.profile-stats-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.profile-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.profile-stats-item-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-stats-item-label {
+  font-size: 16px;
+  font-weight: 500;
+}

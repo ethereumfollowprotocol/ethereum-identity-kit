@@ -1,5 +1,5 @@
 import { Address } from "../../types/address";
 
-export interface ProfileCardProps {
+export type ProfileCardProps = {
   userAddress: Address;
-}
+} & React.HTMLAttributes<HTMLDivElement>;

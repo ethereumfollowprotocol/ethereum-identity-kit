@@ -5,7 +5,7 @@ import ProfileCard from "./ProfileCard";
 const queryClient = new QueryClient();
 
 export default {
-  title: "ReactComponentLibrary/Rating",
+  title: "ReactComponentLibrary/Profile Card",
   component: ProfileCard,
 } as Meta<typeof ProfileCard>;
 
@@ -13,5 +13,5 @@ const Template: StoryFn<typeof ProfileCard> = (args) => <QueryClientProvider cli
 
 export const ProfileCardTest = Template.bind({});
 ProfileCardTest.args = {
-  userAddress: "0x5B0f3DBdD49614476e4f5fF5Db6fe13d41fCB516",
+  userAddress: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
 };

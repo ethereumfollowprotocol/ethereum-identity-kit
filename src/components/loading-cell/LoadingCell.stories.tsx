@@ -2,7 +2,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import LoadingCell, { DEFAULT_LOADING_GRADIENT } from "./LoadingCell";
 
 export default {
-  title: "ReactComponentLibrary/Rating",
+  title: "ReactComponentLibrary/Loading Cell",
   component: LoadingCell,
 } as Meta<typeof LoadingCell>;
 
